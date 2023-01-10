@@ -9,8 +9,11 @@ export default class GetShoppingList extends React.Component {
   getShoppingList = async () => {
     // const [data, setData] = useState([]);
 
-    const ClientID = "aqVTxdIHE0aEDYu1XksO";
-    const ClientSecret = "hFcW9OjDU4";
+    // const ClientID = "aqVTxdIHE0aEDYu1XksO";
+    // const ClientSecret = "hFcW9OjDU4";
+
+    const ClientID = process.env.REACT_APP_CLIENT_ID;
+    const ClientSecret = process.env.REACT_APP_CLIENT_SECRET;
     const URL = "https://openapi.naver.com/v1/search/shop.json?";
 
     // try {
